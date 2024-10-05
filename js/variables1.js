@@ -7,11 +7,11 @@ document.write("El resultado es: " + resultado + "<br>"); // Añadí un <br> par
 // Punto 2
 
 let tempF = 40;
-let conversionGradosC = (5 / 9) * (tempF - 32);
+let convercionGradosC = (5 / 9) * (tempF - 32);
 console.log(
   tempF +
-    "la conversion de fahrenheir a Ceslius es : " +
-    conversionGradosC +
+    "la convercion de fahrenheir a Ceslius es : " +
+    convercionGradosC +
     " grados Celsius. " +
     "<br>"
 );
