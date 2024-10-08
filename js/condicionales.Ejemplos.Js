@@ -49,12 +49,25 @@
 
 // ----COMPARADOR DE NUMEROS--
 
-const num1 = parseInt(prompt("Ingrese primer numero "));
-const num2 = parseInt(prompt("Ingrese el segundo numero "));
-if (num1 > num2) {
-  document.write(`El primer numero ${num1} es mayor que ${num2} `);
-} else if (num1 < num2) {
-  document.write(`El primer numero ${num1} es menor que ${num2} `);
-} else {
-  document.write(`El primer numero ${num1} y el segundo ${num2} son iguales`);
-}
+// const num1 = parseInt(prompt("Ingrese primer numero "));
+// const num2 = parseInt(prompt("Ingrese el segundo numero "));
+// if (num1 > num2) {
+//   document.write(`El primer numero ${num1} es mayor que ${num2} `);
+// } else if (num1 < num2) {
+//   document.write(`El primer numero ${num1} es menor que ${num2} `);
+// } else {
+//   document.write(`El primer numero ${num1} y el segundo ${num2} son iguales`);
+// }
+
+// ---VOCALES---
+
+// const vocal = prompt("ingrese una vocal");
+// if (
+//   vocal === "a" ||
+//   vocal === "e" ||
+//   vocal === "i" ||
+//   vocal === "0" ||
+//   vocal === "u"
+// ) {
+//   document.write("ingresaste una vocal");
+// } else document.write("ERROR : ingresaste una consonante");
