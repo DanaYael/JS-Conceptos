@@ -8,6 +8,7 @@
 
 let ciudad;
 const ciudades = [];
+let ultimoElemento;
 
 while (true) {
   ciudad = prompt(
@@ -19,28 +20,48 @@ while (true) {
   ciudades.push(ciudad);
 }
 
-document.write("Las ciudades ingresadas son: " + ciudades.join(", "));
-
 document.write(`
-  <p>Elemento de Primera posición: ${ciudades[0]}</p>
-  <p>Elemento de Tercera posición: ${
-    ciudades[2] || "No hay suficiente información"
-  }</p>
-  <p>Elemento de Última posición: ${ciudades[ciudades.length - 1]}</p>
+  <p>Las ciudades ingresadas son:</p>
+  <ul>
+      ${ciudades.map((ciudad) => `<li>${ciudad}</li>`).join("")}
+  </ul>
 `);
 
-ciudades.push("Paris");
+document.write(`<p>Las ciudades especificas son :</p>
+
+ <ul>
+  <li>Elemento de Primera posición: ${ciudades[0]}</li>
+  <li>Elemento de Tercera posición: ${
+    ciudades[2] || "No hay suficiente información"
+  }
+    </li>
+  <li>Elemento de Última posición: ${ciudades[ciudades.length - 1]}</li>
+ <ul>
+
+`);
+
+ultimoElemento = ciudades.push("Paris");
 
 document.write(`
   <p>El último elemento agregado es: ${ciudades[ciudades.length - 1]}</p>
 `);
 
-document.write(`<p> Las ciudades ingresadas son: " ${ciudades.join(", ")}<p>`);
+document.write(`
+  <p>Las ciudades ingresadas son:</p>
+  <ul>
+      ${ciudades.map((ciudad) => `<li>${ciudad}</li>`).join("")}
+  </ul>
+`);
 
 document.write(
-  `<p> Las ciudad en la Segunda posicion es : " ${ciudades[2]}<p>`
+  `<p> Las ciudad en la Segunda posicion es : " ${ciudades[1]}<p>`
 );
 
 ciudades.splice(1, 1, "Barcelona");
 
-document.write(`<p> Las ciudades ingresadas son: " ${ciudades.join(", ")}<p>`);
+document.write(`
+  <p>Las ciudades ingresadas son:</p>
+  <ul>
+      ${ciudades.map((ciudad) => `<li>${ciudad}</li>`).join("")}
+  </ul>
+`);
