@@ -17,7 +17,7 @@ function lanzarDosDados() {
 }
 
 // Array
-const frecuencias = new Array(13).fill(0);
+const frecuencias = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 for (i = 0; i < 50; i++) {
   const resultado = lanzarDosDados();
